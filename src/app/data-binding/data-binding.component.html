@@ -1,0 +1,20 @@
+<section>
+  <article>
+    <h3>Interporlation / Interporlação</h3>
+    <p>String renderizada com inteportação: {{ url }}</p>
+    <p>O resultado de 1+1= {{ 1 + 1 }}</p>
+    <p>O resultado de 1+1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>
+      Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}
+    </p>
+  </article>
+
+  <article>
+    <h3>property Binding</h3>
+    <img src="{{ urlImage }}" />
+    <img [src]="urlImage">
+    <img bind-src="urlImage">
+  </article>
+</section>
+
+<p>property bind é o valor do componente para o template. Usa se colchetes [src]</p>
